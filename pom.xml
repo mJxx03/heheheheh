@@ -3,13 +3,16 @@
   <groupId>jk.vit</groupId>
   <artifactId>sample1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies> 
-	  <!-- https://mvnrespostiry.com/artifact/org.testng/testng--> 
-  <dependency> 
-	  <groupId>org.testng</groupId>
-	  <artifactId>testng</artifactId>
-	  <version>7.8.0</version> 
-      <scope>test</scope>
-  </dependency>
-  </dependencies>
+<build>
+    <plugins>
+        <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <configuration>
+          <mainClass>com.example.Main</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+	</build> 
 </project>
